@@ -30,7 +30,6 @@ class MultiScaleSampler(Sampler):
         """
         # min. and max. spatial dimensions
         self.data_source = data_source
-        self.data_idx_order_list = np.array(data_source.data_idx_order_list)
         self.ds_width = data_source.ds_width
         self.seed = data_source.seed
         if self.ds_width:

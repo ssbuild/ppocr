@@ -65,9 +65,9 @@ Metric:
   main_indicator: hmean
 Train:
   dataset:
-    name: DetDataSet
+    name: MyDetDataSet
     data_dir:
-      - /data/cv/data/ocr/det_ocr/train
+      - /data/ocr/det_ocr/train
     transforms:
     - DecodeImage:
         img_mode: BGR
@@ -127,9 +127,9 @@ Train:
     num_workers: 2
 Eval:
   dataset:
-    name: DetDataSet
+    name: MyDetDataSet
     data_dir:
-      - /data/cv/data/ocr/det_ocr/dev
+      - /data/ocr/det_ocr/dev
     transforms:
     - DecodeImage:
         img_mode: BGR
@@ -157,5 +157,5 @@ Eval:
   loader:
     shuffle: false
     drop_last: false
-    batch_size_per_card: 4
+    batch_size_per_card: 1
     num_workers: 1
