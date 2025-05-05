@@ -50,14 +50,14 @@ Optimizer:
   lr:
     name: Cosine
     learning_rate: 0.001
-    warmup_epoch: 2
+    warmup_epoch: 8
   regularizer:
     name: L2
     factor: 5.0e-05
 PostProcess:
   name: DBPostProcess
   thresh: 0.3
-  box_thresh: 0.6
+  box_thresh: 0.70
   max_candidates: 1000
   unclip_ratio: 1.5
 Metric:
